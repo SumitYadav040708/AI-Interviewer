@@ -1,0 +1,9 @@
+# ai-service/requirements.txt
+fastapi
+uvicorn
+pydantic
+python-dotenv
+openai
+openai-whisper
+ffmpeg-python
+python-multipart

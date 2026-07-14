@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #0B0B0B;
+  --surface: #151515;
+  --surface-2: #1D1D1D;
+  --surface-border: #242424;
+  --text-primary: #FFFFFF;
+  --text-secondary: #C4C4C4;
+  --text-muted: #8C8C8C;
+  --accent: #0A4D9E;
+  --accent-hover: #083D7A;
+  --focus-ring: rgba(10, 77, 158, 0.35);
+}
+
+html, body, #root {
+  min-height: 100%;
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: 'Times New Roman', serif;
+}
+
+* {
+  font-family: 'Times New Roman', serif !important;
+}
+
+body {
+  background: var(--background);
+}
+
+.bg-gray-50,
+.bg-white,
+.bg-slate-50,
+.bg-slate-100,
+.bg-blue-50,
+.bg-teal-50,
+.bg-emerald-50,
+.bg-emerald-100 {
+  background-color: var(--surface) !important;
+}
+
+.border-gray-200,
+.border-slate-100,
+.border-slate-200,
+.border-teal-100,
+.border-emerald-100,
+.border-blue-100,
+.border-slate-800,
+.border-slate-700 {
+  border-color: var(--surface-border) !important;
+}
+
+.text-slate-900,
+.text-gray-900,
+.text-slate-800,
+.text-slate-700,
+.text-slate-600,
+.text-blue-700,
+.text-slate-900,
+.text-slate-800 {
+  color: var(--text-primary) !important;
+}
+
+.text-gray-500,
+.text-gray-400,
+.text-slate-500,
+.text-slate-400,
+.text-slate-300,
+.text-gray-600,
+.text-slate-200,
+.text-slate-300,
+.text-slate-400,
+.text-slate-500,
+.text-slate-600 {
+  color: var(--text-secondary) !important;
+}
+
+.text-teal-500,
+.text-teal-600,
+.text-teal-700,
+.text-emerald-500,
+.text-emerald-600,
+.text-blue-600,
+.text-blue-700,
+.text-teal-400,
+.text-teal-500 {
+  color: var(--accent) !important;
+}
+
+.bg-teal-500,
+.bg-teal-600,
+.bg-teal-700,
+.bg-blue-600,
+.bg-emerald-500,
+.bg-emerald-600 {
+  background-color: var(--accent) !important;
+}
+
+.hover\:bg-teal-700:hover,
+.hover\:bg-blue-700:hover,
+.hover\:bg-teal-500:hover,
+.hover\:bg-teal-600:hover {
+  background-color: var(--accent-hover) !important;
+}
+
+.hover\:text-teal-400:hover,
+.hover\:text-teal-500:hover,
+.hover\:text-emerald-600:hover {
+  color: var(--accent) !important;
+}
+
+.border-teal-500,
+.border-blue-100,
+.border-emerald-100 {
+  border-color: var(--accent) !important;
+}
+
+.focus\:ring-teal-500:focus,
+.focus\:ring-teal-500:focus-visible,
+.focus\:ring-2:focus,
+.focus\:ring-2:focus-visible {
+  box-shadow: 0 0 0 3px var(--focus-ring) !important;
+}
+
+.focus\:bg-white:focus,
+.focus\:bg-white:focus-visible {
+  background-color: var(--surface) !important;
+}
+
+.shadow-slate-200,
+.shadow-xl,
+.shadow-2xl,
+.shadow-lg,
+.shadow-sm {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18) !important;
+}
+
+.bg-slate-900,
+.bg-slate-800,
+.bg-slate-700,
+.bg-slate-600 {
+  background-color: #161616 !important;
+}
+
+.text-slate-200,
+.text-slate-300,
+.text-slate-400,
+.text-slate-500,
+.text-gray-400,
+.text-gray-500 {
+  color: var(--text-secondary) !important;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: 'Times New Roman', serif !important;
+  background: var(--surface) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--surface-border) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-secondary) !important;
+}
+
+.bg-white\/50,
+.bg-slate-50\/50,
+.bg-slate-900\/95 {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
