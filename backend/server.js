@@ -40,7 +40,8 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.set("io", io);
+app.set("io", io); //attach socket io instance to express class object ,i.e, set
+
 
 app.get("/", (req, res) => {
     res.send("API is running");
