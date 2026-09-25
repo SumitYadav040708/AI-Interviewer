@@ -11,7 +11,7 @@ const questionSchema = new mongoose.Schema({
         required:true
     },
     idealAnswer:{
-        type:String,
+        type:String,    
         default:"pending"
     },
     userAnswerText:{
@@ -46,7 +46,7 @@ const questionSchema = new mongoose.Schema({
 
 const sessionSchema= new mongoose.Schema({
     user: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,  //id of user owning this interview session
         ref: "User",
         required: true,
         index: true,

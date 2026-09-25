@@ -31,7 +31,7 @@ const userSchema=mongoose.Schema({
     timestamps:true
 })
 
-userSchema.pre("save", async function (next) {
+userSchema.pre("save", async function (next) { //pre save middleware
     if (!this.isModified("password") || !this.password) {
         return ;
     }
